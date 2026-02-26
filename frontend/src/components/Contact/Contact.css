@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* ================= Contact Section ================= */
+
+.contact-section {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  width: 90%;
+  max-width: 800px;
+}
+
+.info-content {
+  text-align: center;
+}
+
+/* ---------- TITLE ---------- */
+
+.contact-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(135deg, #0a74b1, #085a8c);
+  border-radius: 4px;
+}
+
+/* ---------- Subtitle ---------- */
+
+.contact-subtitle {
+  max-width: 650px;
+  margin: 25px auto 40px auto;
+  text-align: center;
+}
+
+/* ---------- Contact Methods ---------- */
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.contact-method:last-child {
+  border-bottom: none;
+}
+
+.contact-method:hover {
+  transform: translateX(5px);
+}
+
+/* ---------- Icons (THEME COLORS) ---------- */
+
+.method-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #0a74b1, #085a8c);
+  color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover .method-icon {
+  background: linear-gradient(135deg, #085a8c, #064a73);
+}
+
+/* ---------- Text ---------- */
+
+.method-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #202020;
+}
+
+.method-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.method-link:hover {
+  color: #0a74b1;
+}
+
+.whatsapp-icon {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.phone-icon {
+  background: linear-gradient(135deg, #0a74b1, #085a8c);
+}
+
+.email-icon {
+  background: linear-gradient(135deg, #03a9f4, #0286c2);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-method {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .method-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
